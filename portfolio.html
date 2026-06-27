@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1 class="animated-heading">Welcome to My Portfolio</h1>
+        <p style="text-align: center;">
+            Hi! I am an aspiring software engineer passionate about building modern web architectures and clean UI layouts. 
+            Hover here to check my 
+            <span class="tooltip-container">Availability status
+                <span class="tooltip-text">Available for new projects!</span>
+            </span>.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Expertise</h2>
+        <dl>
+            <dt>Frontend Development</dt>
+            <dd>Structuring semantic layouts with HTML5 and designing flexible web components using responsive CSS.</dd>
+            
+            <dt>Programming Languages</dt>
+            <dd>Developing structured programs and writing logic using C, C++, and Object-Oriented Java.</dd>
+            
+            <dt>Database Management</dt>
+            <dd>Designing schema layouts and writing efficient queries using structured SQL syntax.</dd>
+        </dl>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+            </div>
+            <div>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" required placeholder="your.email@example.com">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>

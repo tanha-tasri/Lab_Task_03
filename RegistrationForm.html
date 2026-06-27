@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RegistrationForm.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Student Registration Form</h2>
+        <form action="#" method="POST">
+            
+            <input type="hidden" name="form_id" value="REG_2026">
+
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number (11 digits) *</label>
+                <input type="tel" id="phone" name="phone" required 
+                       pattern="[0-9]{11}" placeholder="e.g., 01XXXXXXXXX">
+            </div>
+
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department">
+                    <option value="se">Software Engineering</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="eee">EEE</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>
